@@ -5,190 +5,185 @@ date:   2016-02-26 20:54:45 +0800
 categories: 工具
 ---
 
-# Markdown syntax guide and writing on MWeb
+# Markdown 语法和 MWeb 写作使用说明
 
-## Philosophy
+## Markdown 的设计哲学
 
-> Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
-> Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions.
-> Markdown's syntax is intended for one purpose: to be used as a format for *writing* for the web.
+> Markdown 的目標是實現「易讀易寫」。
+> 不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。
+> Markdown 的語法有個主要的目的：用來作為一種網路內容的*寫作*用語言。
 
 <!-- more -->
 
-## Notice
+## 本文约定
 
-You can use  `CMD + R` to preview the result.
+如果有写 `效果如下：`， 在 MWeb 编辑状态下只有用 `CMD + R` 预览才可以看效果。
 
-## Headers
+## 标题
 
-**Example:**
-
-```
-# This is an `<h1>` tag
-## This is an `<h2>` tag
-###### This is an `<h6>` tag
-```
-
-**Result:**
-
-# This is an `<h1>` tag
-## This is an `<h2>` tag
-###### This is an `<h6>` tag
-
-## Emphasis
-
-**Example:**
+Markdown 语法：
 
 ```
-*This text will be italic*
-_This will also be italic_
-
-**This text will be bold**
-__This will also be bold__
-
-*You **can** combine them*
+# 第一级标题 `<h1>` 
+## 第二级标题 `<h2>` 
+###### 第六级标题 `<h6>` 
 ```
 
-**Shortcuts:**  `CMD + U`、`CMD + I`、`CMD + B`
-**Result:**
+效果如下：
 
-*This text will be italic*
-_This will also be italic_
+# 第一级标题 `<h1>` 
+## 第二级标题 `<h2>` 
+###### 第六级标题 `<h6>` 
 
-**This text will be bold**
-__This will also be bold__
 
-*You **can** combine them*
 
-## Newlines
+## 强调
 
-End a line with two or more spaces + enter.
-Just typing enter to newline,please set：`Preferences` - `Themes` - `Translate newlines to <br> tags`  enable ( default is enable )
-
-## Lists
-
-### Unordered
-
-**Example:**
+Markdown 语法：
 
 ```
-* Item 1 unordered list `* + SPACE`
-* Item 2
-	* Item 2a unordered list `TAB + * + SPACE`
-	* Item 2b
+*这些文字会生成`<em>`*
+_这些文字会生成`<u>`_
+
+**这些文字会生成`<strong>`**
+__这些文字会生成`<strong>`__
 ```
 
-**Shortcuts:**  `Option + U`
-**Result:**
+在 MWeb 中的快捷键为： `CMD + U`、`CMD + I`、`CMD + B`
+效果如下：
 
-* Item 1 unordered list `* + SPACE`
-* Item 2
-	* Item 2a unordered list `TAB + * + SPACE`
-	* Item 2b
+*这些文字会生成`<em>`*
+_这些文字会生成`<u>`_
 
-### Ordered
+**这些文字会生成`<strong>`**
+__这些文字会生成`<strong>`__
 
-**Example:**
+## 换行
 
-```
-1. Item 1 ordered list `Number + . + SPACE`
-2. Item 2 
-3. Item 3
-	1. Item 3a ordered list `TAB + Number + . + SPACE`
-	2. Item 3b
-```
+四个及以上空格加回车。
+如果不想打这么多空格，只要回车就为换行，请勾选：`Preferences` - `Themes` - `Translate newlines to <br> tags`
 
-**Result:**
+## 列表
 
-1. Item 1 ordered list `Number + . + SPACE`
-2. Item 2 
-3. Item 3
-	1. Item 3a ordered list `TAB + Number + . + SPACE`
-	2. Item 3b
+### 无序列表
 
-### Task lists
-
-**Example:**
+Markdown 语法：
 
 ```
-- [ ] task one not finish `- + SPACE + [ ]`
-- [x] task two finished `- + SPACE + [x]`
+* 项目一 无序列表 `* + 空格键`
+* 项目二
+	* 项目二的子项目一 无序列表 `TAB + * + 空格键`
+	* 项目二的子项目二
 ```
 
-**Result:**
+在 MWeb 中的快捷键为： `Option + U`
+效果如下：
 
-- [ ] task one not finish `- + SPACE + [ ]`
-- [x] task two finished `- + SPACE + [x]`
+* 项目一 无序列表 `* + 空格键`
+* 项目二
+	* 项目二的子项目一 无序列表 `TAB + * + 空格键`
+	* 项目二的子项目二
 
-## Images
+### 有序列表
 
-**Example:**
+Markdown 语法：
 
 ```
-![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
-Format: ![Alt Text](url)
+1. 项目一 有序列表 `数字 + . + 空格键`
+2. 项目二 
+3. 项目三
+	1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
+	2. 项目三的子项目二
 ```
 
-**Shortcuts:**  `Control + Shift + I`
-The Library's document support drag & drop or `CMD + V` paste or `CMD + Option + I` to insert  the pictrue.
-**Result:**
+效果如下：
 
-![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
+1. 项目一 有序列表 `数字 + . + 空格键`
+2. 项目二 
+3. 项目三
+	1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
+	2. 项目三的子项目二
 
-## Links
+### 任务列表（Task lists）
 
-**Example:**
+Markdown 语法：
+
+```
+- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+```
+
+效果如下：
+
+- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+
+## 图片
+
+Markdown 语法：
+
+```
+![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+格式: ![Alt Text](url)
+```
+
+`Control + Shift + I` 可插入Markdown语法。
+如果是 MWeb 的文档库中的文档，还可以用拖放图片、`CMD + V` 粘贴、`CMD + Option + I` 导入这三种方式来增加图片。
+效果如下：
+
+![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+
+## 链接
+
+Markdown 语法：
 
 ```
 email <example@example.com>
 [GitHub](http://github.com)
-autolink  <http://www.github.com/>
+自动生成连接  <http://www.github.com/>
 ```
 
-**Shortcuts:**  `Control + Shift + L`
-The Library's document support drag & drop or `CMD + Option + I` to insert attachment.
-**Result:**
+`Control + Shift + L` 可插入Markdown语法。
+如果是 MWeb 的文档库中的文档，拖放或`CMD + Option + I` 导入非图片时，会生成连接。
+效果如下：
 
-An email <example@example.com> link.
-[GitHub](http://github.com)
-Automatic linking for URLs
-Any URL (like <http://www.github.com/>) will be automatically converted into a clickable link.
+Email 连接： <example@example.com>
+[连接标题Github网站](http://github.com)
+自动生成连接像： <http://www.github.com/> 这样
 
-## Blockquotes
+## 区块引用
 
-**Example:**
-
-```
-As Kanye West said:
-> We're living the future so
-> the present is our past.
-```
-
-**Shortcuts:**  `CMD + Shift + B`
-**Result:**
-
-As Kanye West said:
-> We're living the future so
-> the present is our past.
-
-## Inline code
-
-**Example:**
+Markdown 语法：
 
 ```
-I think you should use an
-`<addr>` `code` element here instead.
+某某说:
+> 第一行引用
+> 第二行费用文字
 ```
 
-**Shortcuts:**  `CMD + K`
-**Result:**
+`CMD + Shift + B` 可插入Markdown语法。
+效果如下：
 
-I think you should use an
-`<addr>` `code` element here instead.
+某某说:
+> 第一行引用
+> 第二行费用文字
 
-## Multi-line code
+## 行内代码
 
-**Example:**
+Markdown 语法：
+
+```
+像这样即可：`<addr>` `code`
+```
+
+`CMD + K` 可插入Markdown语法。
+效果如下：
+
+像这样即可：`<addr>` `code`
+
+## 多行或者一段代码
+
+Markdown 语法：
 
 	```js
 	function fancyAlert(arg) {
@@ -199,21 +194,21 @@ I think you should use an
 	}
 	```
 
-**Shortcuts:**  `CMD + Shift + K`
-**Result:**
+`CMD + Shift + K` 可插入Markdown语法。
+效果如下：
 
 ```js
 function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-
+	if(arg) {
+		$.facebox({div:'#foo'})
+	}
+	
 }
 ```
 
-## Sequence and Flow chart
+## 顺序图或流程图
 
-**Example:**
+Markdown 语法：
 
 	```sequence
 	张三->李四: 嘿，小四儿, 写博客了没?
@@ -232,7 +227,7 @@ function fancyAlert(arg) {
 	cond(no)->op
 	```
 
-**Result:** ( Please enable  `Preferences` - `Themes` - `Enable sequence & flow chart`, default is enable. )
+效果如下（ `Preferences` - `Themes` - `Enable sequence & flow chart` 才会看到效果 ）：
 
 ```sequence
 张三->李四: 嘿，小四儿, 写博客了没?
@@ -251,43 +246,40 @@ cond(yes)->e
 cond(no)->op
 ```
 
-More info: <http://bramp.github.io/js-sequence-diagrams/>, <http://adrai.github.io/flowchart.js/>
+更多请参考：<http://bramp.github.io/js-sequence-diagrams/>, <http://adrai.github.io/flowchart.js/>
 
+## 表格
 
-## Tables
-
-**Example:**
+Markdown 语法：
 
 ```
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
 ```
 
-You can create tables by assembling a list of words and dividing them with hyphens - (for the first row), and then separating each column with a pipe |:
+效果如下：
 
-**Result:**
-
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
 
 
-## Strikethrough
+## 删除线
 
-**Example:**
+Markdown 语法：
 
-	 (like ~~this~~)
+	加删除线像这样用： ~~删除这些~~
 
-**Result:**
+效果如下：
 
-Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
+加删除线像这样用： ~~删除这些~~
 
-## Horizontal Rules
+## 分隔线
 
-Following lines will produce a horizontal rule:
+以下三种方式都可以生成分隔线：
 
 	***
 
@@ -295,7 +287,7 @@ Following lines will produce a horizontal rule:
 
 	- - -
 
-**Result:**
+效果如下：
 
 ***
 
@@ -303,56 +295,68 @@ Following lines will produce a horizontal rule:
 
 - - -
 
+
 ## MathJax
 
-Use double US dollors sign pair for Block level Math formula, and one US dollor sign pair for Inline Level.
+Markdown 语法：
+
 
 ```
-For example this is a Block level $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$ formula, and this is an inline Level $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$ formula.
+块级公式：
+$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 \\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
 {1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
 
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
 ```
 
-**Result:**
+效果如下（`Preferences` - `Themes` - `Enable MathJax` 才会看到效果）：
 
-For example this is a Block level $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$ formula, and this is an inline Level $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$ formula.
+块级公式：
+$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 \\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
 {1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
 
-## Footnote
 
-**Example:**
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+
+
+## 脚注（Footnote）
+
+Markdown 语法：
 
 ```
-This is a footnote:[^sample_footnote]
+这是一个脚注：[^sample_footnote]
 ```
 
-**Result:**
+效果如下：
 
-This is a footnote:[^sample_footnote]
+这是一个脚注：[^sample_footnote]
 
-[^sample_footnote]: footnote text detail...
+[^sample_footnote]: 这里是脚注信息
 
-## Comment And Read More..
+
+## 注释和阅读更多
 
 <!-- comment -->
 <!-- more -->
-Actions->Insert Read More Comment *OR* `CMD + .`
+Actions->Insert Read More Comment *或者* `Command + .`
+**注** 阅读更多的功能只用在生成网站或博客时。
 
 ## TOC
 
-**Example:**
+Markdown 语法：
 
 ```
 [TOC]
 ```
 
-**Result:**
+效果如下：
 
 [TOC]
+
 
