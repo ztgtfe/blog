@@ -8,13 +8,14 @@
 # Site settings
 title: 前端博客
 email: liangguanghui@ztgt.cn
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >
+  中投国泰前端博客，希望大家将自己在项目中遇见的问题、解决的方法、或者自己的生活po出来，相互讨论，共同进步。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ztgtfe.github.io/" # the base hostname & protocol for your site
 github_username:  ztgtfe
 
 # Build settings
 markdown: kramdown
+
+paginate: 1
+paginate_path: "_post/page:1"
