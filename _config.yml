@@ -16,6 +16,3 @@ github_username:  ztgtfe
 
 # Build settings
 markdown: kramdown
-
-paginate: 1
-paginate_path: "_post/page:1"
