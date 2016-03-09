@@ -9,7 +9,7 @@ categories: 工具
 1. 首先，你得有自己的github的账号，登录。然后来到我们博客的页面[https://github.com/ztgtfe/ztgtfe.github.io](https://github.com/ztgtfe/ztgtfe.github.io)
 2. 在页面的右上角点击fork，将博客的仓库fork到自己的github上![先fork到个人仓库里](http://7mnlto.com1.z0.glb.clouddn.com/2016-03-10%2001-09-35.png)
 3. 在自己的github里拷贝git链接![拷贝git链接](http://7mnlto.com1.z0.glb.clouddn.com/2016-03-10%2001-13-52.png)
-4. 在本地的命令行工具里git clone，然后打开你本地的项目地址，
+4. 在本地的命令行工具里git clone(如果本地没有git，请参考[安装Git](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137396287703354d8c6c01c904c7d9ff056ae23da865a000)先行安装)，然后打开你本地的项目地址，
 
 	```
 	git clone https://github.com/LeonWhite/ztgtfe.github.io.git
@@ -49,6 +49,14 @@ categories: 工具
 	git commit -m"POST Blog 2016-03-10-test.markdown"
 	git push https://github.com/LeonWhite/ztgtfe.github.io.git master
 	```
+	接下来输入用户名和密码你就push到你的github仓库了，然后通知http://ztgtfe.github.io/ 的网管去主仓库merge你的博客，完成后你就能在主站上看到你发的博客了。
+	
+	
+<!-- more -->
+*参考资料：*
+> 1. 廖雪峰[《git教程》](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+> 2. [Markdown 语法说明 (简体中文版) ](http://wowubuntu.com/markdown/)
+
 
 
 
