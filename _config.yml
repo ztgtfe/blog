@@ -25,8 +25,8 @@ locals:                                     #自定义常量
   about: 关于
 active: 技术                                 #自定义常量
 subscribe_rss: /pages/atom.xml              #订阅地址
-pygments: true
 markdown: redcarpet
+pygments: true
 redcarpet:
   extensions:
     - hard_wrap
@@ -34,3 +34,5 @@ redcarpet:
     - autolink
     - strikethrough
     - fenced_code_blocks
+    - highlight
+    - quote
