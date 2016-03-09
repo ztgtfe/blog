@@ -1,25 +1,53 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-02-26 21:46:06 +0800
-categories: jekyll update
+title:  "我该怎样写一篇JekyII博客"
+date:   2016-03-10 00:48:47 +0800
+categories: 工具
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+我们在Github上的博客已经搭建了两周了，但是还没有一篇博客在上面，可能是大家对JekyII这种静态博客、Git和Github不熟悉的原因吧。我就在这写一篇发博客的流程，再附上一些Git的教程，算抛砖引玉之言。
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+1. 首先，你得有自己的github的账号，登录。然后来到我们博客的页面[https://github.com/ztgtfe/ztgtfe.github.io](https://github.com/ztgtfe/ztgtfe.github.io)
+2. 在页面的右上角点击fork，将博客的仓库fork到自己的github上![先fork到个人仓库里](http://7mnlto.com1.z0.glb.clouddn.com/2016-03-10%2001-09-35.png)
+3. 在自己的github里拷贝git链接![拷贝git链接](http://7mnlto.com1.z0.glb.clouddn.com/2016-03-10%2001-13-52.png)
+4. 在本地的命令行工具里git clone，然后打开你本地的项目地址，
 
-Jekyll also offers powerful support for code snippets:
+	```
+	git clone https://github.com/LeonWhite/ztgtfe.github.io.git
+	```
+	然后你可以看到这样的目录结构
+	```
+|____.git
+|____.gitignore
+|_____config.yml
+|_____includes		//存放页面子模板
+|_____layouts		//存放页面模板
+|_____posts			//存放blog内容
+|_____sass			//存放基本样式
+|____about.md		//关于我们的模板
+|____css				//存放页面样式
+|____feed.xml		//存放反馈的数据
+|____index.html	//主页
+```
+5. 要新建一篇博客很简单，只需要在_posts文件夹下新建一个markdown文件就行，命名规范是“日期-博客名.markdown”，比如
+`2016-03-03-test.markdown`
+*需要强调的是文件名里不能有空格*
+6. 在博客的内容中，需要注意的是在开头部分需要添加[YAML](http://yaml.org/)头信息，像这样：
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+	```
+	---
+	layout: post
+	title:  "我该怎样写一篇JekyII博客"
+	date:   2016-03-10 00:48:47 +0800
+	categories: 工具
+	---
+	```
+==头信息非常重要，文章在网站显示的最终的标题其实定义在这里，还有分类、时间、模板等等。具体可以看看YAML的文档==
+7. 具体博客的内容用markdown来编写，可以参考[Markdown语法和MWeb](http://ztgtfe.github.io/%E5%B7%A5%E5%85%B7/2016/02/26/Markdown-syntax-guide-and-writing-on-MWeb.html)
+8. 博客写完，在git上操作：
+	```
+	
+	```
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+
+
