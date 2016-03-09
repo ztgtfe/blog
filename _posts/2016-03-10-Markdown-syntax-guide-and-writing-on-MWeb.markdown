@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Markdown语法和MWeb"
-date:   2016-02-26 20:54:45 +0800
-categories: 工具
+title:  "使用markdown总结"
+date:   2016-03-10 01:12:00 +0800
+categories: 
 ---
 
 # Markdown 语法和 MWeb 写作使用说明
@@ -194,17 +194,6 @@ Markdown 语法：
 	}
 	```
 
-`CMD + Shift + K` 可插入Markdown语法。
-效果如下：
-
-```js
-function fancyAlert(arg) {
-	if(arg) {
-		$.facebox({div:'#foo'})
-	}
-	
-}
-```
 
 ## 顺序图或流程图
 
@@ -248,115 +237,9 @@ cond(no)->op
 
 更多请参考：<http://bramp.github.io/js-sequence-diagrams/>, <http://adrai.github.io/flowchart.js/>
 
-## 表格
-
-Markdown 语法：
-
-```
-第一格表头 | 第二格表头
---------- | -------------
-内容单元格 第一列第一格 | 内容单元格第二列第一格
-内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
-```
-
-效果如下：
-
-第一格表头 | 第二格表头
---------- | -------------
-内容单元格 第一列第一格 | 内容单元格第二列第一格
-内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
 
 
-## 删除线
-
-Markdown 语法：
-
-	加删除线像这样用： ~~删除这些~~
-
-效果如下：
-
-加删除线像这样用： ~~删除这些~~
-
-## 分隔线
-
-以下三种方式都可以生成分隔线：
-
-	***
-
-	*****
-
-	- - -
-
-效果如下：
-
-***
-
-*****
-
-- - -
 
 
-## MathJax
-
-Markdown 语法：
-
-
-```
-块级公式：
-$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
-
-\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
-1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
-{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
-
-行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
-```
-
-效果如下（`Preferences` - `Themes` - `Enable MathJax` 才会看到效果）：
-
-块级公式：
-$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
-
-\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
-1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
-{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
-
-
-行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
-
-
-## 脚注（Footnote）
-
-Markdown 语法：
-
-```
-这是一个脚注：[^sample_footnote]
-```
-
-效果如下：
-
-这是一个脚注：[^sample_footnote]
-
-[^sample_footnote]: 这里是脚注信息
-
-
-## 注释和阅读更多
-
-<!-- comment -->
-<!-- more -->
-Actions->Insert Read More Comment *或者* `Command + .`
-**注** 阅读更多的功能只用在生成网站或博客时。
-
-## TOC
-
-Markdown 语法：
-
-```
-[TOC]
-```
-
-效果如下：
-
-[TOC]
 
 
