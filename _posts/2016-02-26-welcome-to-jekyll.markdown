@@ -45,7 +45,9 @@ categories: 工具
 7. 具体博客的内容用markdown来编写，可以参考[Markdown语法和MWeb](http://ztgtfe.github.io/%E5%B7%A5%E5%85%B7/2016/02/26/Markdown-syntax-guide-and-writing-on-MWeb.html)
 8. 博客写完，在git上操作：
 	```
-	
+	git add .
+	git commit -m"POST Blog 2016-03-10-test.markdown"
+	git push https://github.com/LeonWhite/ztgtfe.github.io.git master
 	```
 
 
